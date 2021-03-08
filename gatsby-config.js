@@ -29,16 +29,16 @@ module.exports = {
       },
     },
     {
-    resolve: "gatsby-source-graphql",
-    options: {
-      // This type will contain remote schema Query type
-      typeName: "Lollies",
-      // This is the field under which it's accessible
-      fieldName: "LOLLIES",
-      // URL to query from
-      url: "https://virtual-lolly-byFahad.netlify.app/.netlify/functions/vlolly",
-    },
-  },
-  
+      resolve: "gatsby-source-graphql",
+      options: {
+        // This type will contain remote schema Query type
+        typeName: "Lollies",
+        // This is the field under which it's accessible
+        fieldName: "LOLLIES",
+        // URL to query from
+        url:
+          "https://virtual-lolly-ashraf.netlify.app/.netlify/functions/vlolly",
+      },
+    }
   ],
 }

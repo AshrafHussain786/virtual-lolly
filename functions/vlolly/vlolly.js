@@ -14,7 +14,6 @@ const typeDefs = gql`
     getAllLollies: [Lolly]!
     GetLollyByLink(link: String!): Lolly
   }
-
   type Lolly {
     topColor: String!
     middleColor: String!
@@ -24,7 +23,6 @@ const typeDefs = gql`
     message: String!
     link: String!
   }
-
   type Mutation {
     addLolly(
       topColor: String!, 
@@ -103,7 +101,7 @@ const resolvers = {
             )
           )
           axios
-            .post("https://api.netlify.com/build_hooks/602406755f22ff683c0215ad")
+            .post("https://api.netlify.com/build_hooks/5feafc26ad5ebec8669f7949")
             .then(function (response) {
               // console.log("response after posting data through axios >>>>>>>>>>>>>>>>>>>>>>: ", response)
             })
