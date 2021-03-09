@@ -102,14 +102,14 @@ const resolvers = {
             }
             )
           )
-          axios
-            .post("https://api.netlify.com/build_hooks/604676e2e3327207d31735eb")
-            .then(function (response) {
-              // console.log("response after posting data through axios >>>>>>>>>>>>>>>>>>>>>>: ", response)
-            })
-            .catch(function (error) {
-              console.error(error)
-            })
+          // axios
+          //   .post("https://api.netlify.com/build_hooks/604676e2e3327207d31735eb")
+          //   .then(function (response) {
+          //     // console.log("response after posting data through axios >>>>>>>>>>>>>>>>>>>>>>: ", response)
+          //   })
+          //   .catch(function (error) {
+          //     console.error(error)
+          //   })
   
           console.log("result in add mutation >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", result)
           return result.data
