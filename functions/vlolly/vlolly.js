@@ -14,6 +14,7 @@ const typeDefs = gql`
     getAllLollies: [Lolly]!
     GetLollyByLink(link: String!): Lolly
   }
+
   type Lolly {
     topColor: String!
     middleColor: String!
@@ -23,6 +24,7 @@ const typeDefs = gql`
     message: String!
     link: String!
   }
+
   type Mutation {
     addLolly(
       topColor: String!, 
